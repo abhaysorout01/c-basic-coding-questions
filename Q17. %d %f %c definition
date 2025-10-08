@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int num = 65;       // integer
+    float val = 65.25;  // float
+    char ch = 'A';      // character
+
+    printf("Using %%d (integer format):\n");
+    printf("num = %d\n", num);
+    printf("val = %d (prints integer part only)\n", (int)val);
+    printf("ch = %d (prints ASCII value)\n\n", ch);
+
+    printf("Using %%f (float format):\n");
+    printf("num = %f (integer printed as float)\n", (float)num);
+    printf("val = %f\n", val);
+    printf("ch = %f (prints ASCII value as float)\n\n", (float)ch);
+
+    printf("Using %%c (character format):\n");
+    printf("num = %c (prints ASCII character of integer)\n", num);
+    printf("val = %c (prints ASCII character of integer part of float)\n", (int)val);
+    printf("ch = %c\n", ch);
+
+    return 0;
+}
