@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() {
+    int n,a,b;
+    int frq = 0;
+    printf("Enter the size of array: ");
+    scanf("%d", &n);
+    int arr[n];
+    for(int i = 0; i < n; i++) {
+        printf("Enter element %d: ", i + 1);
+        scanf("%d", &arr[i]);
+    }
+    printf("Enter the element to check its frequency:");
+    scanf("%d", &a);
+    for(int i = 0;i < n;i++) {
+        if(arr[i] == a) {
+            frq++;
+        }
+    }
+    printf("your number appeared %d times", frq);
+    return 0;
+}
